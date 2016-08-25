@@ -7,9 +7,8 @@ include('classes/db_connection.php');
 
 $db = new dbConnection();
 $link = $db->getConnection();
-
-$on_call_member = "SELECT Name, On_Call_From FROM on-call_schedule WHERE Order_of_Call=1";
 	
+
 function get_member($query) {
 
     $result = $link->query($query);
@@ -25,8 +24,34 @@ function get_start_date($query) {
 	$start_date = new DateTime($start_date);
 	$start_date = $start_date->format('Y-m-d');
 	return $start_date;
-?>
+}
 
+function get_end_date($query) {
+	$result = $link->query($query);
+    $row = $result->fetch_object();
+    $end_date = $row->On_Call_To;
+    $end_date = new DateTime($start_date);
+    $end_date = $start_date->format('Y-m-d');
+    return $end_date;
+}
+
+function get_members_phone($query) {
+	$result = $link->query($query);
+    $row = $result->fetch_object();
+    $members_phone = $row->Cell_Phone;
+    return $members_phone;
+
+}
+
+function get_members_email($query) {
+    $result = $link->query($query);
+    $row = $result->fetch_object();
+    $members_email = $row->Email;
+    return $members_email;
+
+}
+
+?>
 
 <html>
 	
@@ -62,16 +87,19 @@ function get_start_date($query) {
 		</div>
 		<br><br><br>
 
-		<!-- Member 1 -->
+		<!--On Call Member -->
 			<?php 
-				$query = "SELECT NAME FROM on_call_schedule WHERE Id='1'";
-				$first_member = get_member($query);
+				$query_name = "SELECT NAME FROM on_call_schedule WHERE Id='1'";				
+				$member = get_member($query_name);
+		
+				$query_end_date = "";
+
 			?>
 		
 	<h2 style="margin-left:35px; color:rgb(1, 171, 108)">Currently On Call</h2>
 	<div style="width: 90%; padding: 5px; border: 5px solid rgba(208, 24, 24, 0.53); margin: 5px; margin-left:35px" class="container-fluid1">
 		<div class="row">
-		  <div class="column_oncall"><h4><?php echo $first_member; ?></h4></div>
+		  <div class="column_oncall"><h4>$someveriable</h4></div>
 			<span><img style="float: right; margin-right: 16px" src="/images/oncall2.png"</span>
 			
 			<div class="column_oncall">On Call Till: $sometimevariable	
@@ -95,7 +123,7 @@ function get_start_date($query) {
 			<div class="column_oncall">Email: $someemailvariable</div>
 			<div class="column_oncall">Phone: $somephonevariable</div>
 		</div>
-		<
+
 	</div>	
 	
 	<div style="width: 90%; padding: 10px; border: 3px solid gray; margin: 5px; margin-left:35px" class="container-fluid1">
