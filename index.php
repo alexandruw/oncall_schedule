@@ -8,17 +8,23 @@ include('classes/db_connection.php');
 $db = new dbConnection();
 $link = $db->getConnection();
 
-
+$on_call_member = "SELECT Name, On_Call_From FROM on-call_schedule WHERE Order_of_Call=1";
 	
-	function get_member($query) {
+function get_member($query) {
 
     $result = $link->query($query);
 	$row = $result->fetch_object();
-
 	return $row->Name;
 }
 
+function get_start_date($query) {
 
+	$result = $link->query($query);
+    $row = $result->fetch_object();
+    $start_date = $row->On_Call_From;
+	$start_date = new DateTime($start_date);
+	$start_date = $start_date->format('Y-m-d');
+	return $start_date;
 ?>
 
 
