@@ -627,3 +627,10 @@ Stack trace:
 [24-Aug-2016 15:33:10 America/Los_Angeles] PHP Fatal error:  Cannot redeclare add_seven_days() (previously declared in /var/www/html/oncall_schedule/update_db.php:53) in /var/www/html/oncall_schedule/create_on_call_schedule_db.php on line 19
 [24-Aug-2016 15:34:53 America/Los_Angeles] PHP Fatal error:  Cannot redeclare class dbConnection in /var/www/html/oncall_schedule/classes/db_connection.php on line 3
 [24-Aug-2016 15:43:10 America/Los_Angeles] PHP Notice:  Undefined variable: number_of_members in /var/www/html/oncall_schedule/tests/test.php on line 23
+[24-Aug-2016 17:50:05 America/Los_Angeles] PHP Notice:  Undefined variable: wuery in /var/www/html/oncall_schedule/functions.php on line 16
+[24-Aug-2016 17:50:05 America/Los_Angeles] PHP Notice:  Undefined variable: link in /var/www/html/oncall_schedule/functions.php on line 10
+[24-Aug-2016 17:50:05 America/Los_Angeles] PHP Fatal error:  Call to a member function query() on null in /var/www/html/oncall_schedule/functions.php on line 10
+[24-Aug-2016 17:50:20 America/Los_Angeles] PHP Notice:  Undefined variable: link in /var/www/html/oncall_schedule/functions.php on line 10
+[24-Aug-2016 17:50:20 America/Los_Angeles] PHP Fatal error:  Call to a member function query() on null in /var/www/html/oncall_schedule/functions.php on line 10
+[24-Aug-2016 17:51:25 America/Los_Angeles] PHP Notice:  Undefined variable: link in /var/www/html/oncall_schedule/functions.php on line 10
+[24-Aug-2016 17:51:25 America/Los_Angeles] PHP Fatal error:  Call to a member function query() on null in /var/www/html/oncall_schedule/functions.php on line 10

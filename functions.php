@@ -1,8 +1,15 @@
+<?php
+include ('classes/db_connection.php');
+
+
 function get_member($query) {
 
+	$db = new dbConnection();
+	$link = $db->getConnection();
     $result = $link->query($query);
     $row = $result->fetch_object();
-    return $row->Name;
+    $member = $row->Name;
+
 }
 
 function get_start_date($query) {
@@ -40,3 +47,4 @@ function get_members_email($query) {
 
 }
 
+?>
