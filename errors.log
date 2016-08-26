@@ -634,3 +634,13 @@ Stack trace:
 [24-Aug-2016 17:50:20 America/Los_Angeles] PHP Fatal error:  Call to a member function query() on null in /var/www/html/oncall_schedule/functions.php on line 10
 [24-Aug-2016 17:51:25 America/Los_Angeles] PHP Notice:  Undefined variable: link in /var/www/html/oncall_schedule/functions.php on line 10
 [24-Aug-2016 17:51:25 America/Los_Angeles] PHP Fatal error:  Call to a member function query() on null in /var/www/html/oncall_schedule/functions.php on line 10
+[25-Aug-2016 13:33:58 America/Los_Angeles] PHP Parse error:  syntax error, unexpected '$query' (T_VARIABLE) in /var/www/html/oncall_schedule/tests/test2.php on line 5
+[25-Aug-2016 13:35:15 America/Los_Angeles] PHP Parse error:  syntax error, unexpected '$query' (T_VARIABLE) in /var/www/html/oncall_schedule/tests/test2.php on line 5
+[25-Aug-2016 13:39:33 America/Los_Angeles] PHP Notice:  Undefined variable: end_date in /var/www/html/oncall_schedule/tests/test2.php on line 19
+[25-Aug-2016 13:39:42 America/Los_Angeles] PHP Notice:  Undefined variable: end_date in /var/www/html/oncall_schedule/tests/test2.php on line 19
+[25-Aug-2016 13:39:52 America/Los_Angeles] PHP Notice:  Undefined variable: end_date in /var/www/html/oncall_schedule/tests/test2.php on line 19
+[25-Aug-2016 15:52:50 America/Los_Angeles] PHP Notice:  Use of undefined constant query - assumed 'query' in /var/www/html/oncall_schedule/tests/test2.php on line 9
+[25-Aug-2016 15:52:50 America/Los_Angeles] PHP Fatal error:  Call to a member function fetch_object() on boolean in /var/www/html/oncall_schedule/functions.php on line 21
+[25-Aug-2016 16:15:58 America/Los_Angeles] PHP Parse error:  syntax error, unexpected '$member_name' (T_VARIABLE) in /var/www/html/oncall_schedule/tests/test2.php on line 7
+[25-Aug-2016 16:16:16 America/Los_Angeles] PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO) in /var/www/html/oncall_schedule/tests/test2.php on line 10
+[26-Aug-2016 08:26:41 America/Los_Angeles] PHP Fatal error:  Cannot redeclare class dbConnection in /var/www/html/oncall_schedule/classes/db_connection.php on line 3
