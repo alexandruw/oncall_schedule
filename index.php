@@ -41,7 +41,7 @@ $numberofMembers = mysqli_num_rows($result);
 			
 
 		?>
-		<h2 style="margin-left:35px; color:rgb(1, 171, 108)">Currently On Call</h2><h5 style="margin-left:35px; color:rgb(1, 171, 108)">(On Call Changes Every Friday at 6:30 PM PST)</h5>
+		<h2 style="margin-left:35px; color:rgb(1, 171, 108)">Currently On Call</h2><h5 style="margin-left:35px; color:rgb(255, 0, 0)">(On Call Changes Every Friday at 6:30 PM PST)</h5>
 		<div style="width: 90%; padding: 5px; border: 5px solid rgba(208, 24, 24, 0.53); margin: 5px; margin-left:35px" class="container-fluid1">
     		<div class="row">
         		<div class="column_oncall"><h4><?php echo $memberName; ?></h4></div>

@@ -54,11 +54,4 @@ function get_members_email($query) {
 
 }
 
-
-
-
-
-
-
-
 ?>
