@@ -644,3 +644,22 @@ Stack trace:
 [25-Aug-2016 16:15:58 America/Los_Angeles] PHP Parse error:  syntax error, unexpected '$member_name' (T_VARIABLE) in /var/www/html/oncall_schedule/tests/test2.php on line 7
 [25-Aug-2016 16:16:16 America/Los_Angeles] PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO) in /var/www/html/oncall_schedule/tests/test2.php on line 10
 [26-Aug-2016 08:26:41 America/Los_Angeles] PHP Fatal error:  Cannot redeclare class dbConnection in /var/www/html/oncall_schedule/classes/db_connection.php on line 3
+[29-Aug-2016 15:23:48 America/Los_Angeles] PHP Warning:  mysqli::mysqli(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: YES) in /var/www/html/oncall_schedule/classes/db_connection.php on line 9
+[29-Aug-2016 15:23:48 America/Los_Angeles] PHP Notice:  Undefined variable: connection in /var/www/html/oncall_schedule/classes/db_connection.php on line 15
+[29-Aug-2016 15:23:48 America/Los_Angeles] PHP Notice:  Trying to get property of non-object in /var/www/html/oncall_schedule/classes/db_connection.php on line 15
+[29-Aug-2016 15:23:48 America/Los_Angeles] PHP Warning:  mysqli::query(): Couldn't fetch mysqli in /var/www/html/oncall_schedule/create_db.php on line 44
+[29-Aug-2016 15:23:48 America/Los_Angeles] PHP Warning:  mysqli::query(): Couldn't fetch mysqli in /var/www/html/oncall_schedule/create_db.php on line 48
+[29-Aug-2016 15:23:48 America/Los_Angeles] PHP Warning:  mysqli::query(): Couldn't fetch mysqli in /var/www/html/oncall_schedule/create_db.php on line 54
+[29-Aug-2016 15:23:48 America/Los_Angeles] PHP Warning:  mysqli::query(): Couldn't fetch mysqli in /var/www/html/oncall_schedule/create_db.php on line 58
+[29-Aug-2016 15:23:48 America/Los_Angeles] PHP Warning:  mysqli::query(): Couldn't fetch mysqli in /var/www/html/oncall_schedule/create_db.php on line 72
+[29-Aug-2016 15:23:48 America/Los_Angeles] PHP Warning:  mysqli::query(): Couldn't fetch mysqli in /var/www/html/oncall_schedule/create_db.php on line 77
+[29-Aug-2016 15:23:48 America/Los_Angeles] PHP Warning:  mysqli::query(): Couldn't fetch mysqli in /var/www/html/oncall_schedule/create_db.php on line 72
+[29-Aug-2016 15:23:48 America/Los_Angeles] PHP Warning:  mysqli::query(): Couldn't fetch mysqli in /var/www/html/oncall_schedule/create_db.php on line 77
+[29-Aug-2016 15:23:48 America/Los_Angeles] PHP Warning:  mysqli::query(): Couldn't fetch mysqli in /var/www/html/oncall_schedule/create_db.php on line 72
+[29-Aug-2016 15:23:48 America/Los_Angeles] PHP Warning:  mysqli::query(): Couldn't fetch mysqli in /var/www/html/oncall_schedule/create_db.php on line 77
+[29-Aug-2016 15:23:48 America/Los_Angeles] PHP Warning:  mysqli::query(): Couldn't fetch mysqli in /var/www/html/oncall_schedule/create_db.php on line 72
+[29-Aug-2016 15:23:48 America/Los_Angeles] PHP Warning:  mysqli::query(): Couldn't fetch mysqli in /var/www/html/oncall_schedule/create_db.php on line 77
+[29-Aug-2016 15:23:48 America/Los_Angeles] PHP Warning:  mysqli::query(): Couldn't fetch mysqli in /var/www/html/oncall_schedule/create_db.php on line 72
+[29-Aug-2016 15:23:48 America/Los_Angeles] PHP Warning:  mysqli::query(): Couldn't fetch mysqli in /var/www/html/oncall_schedule/create_db.php on line 77
+[29-Aug-2016 15:23:48 America/Los_Angeles] PHP Warning:  mysqli::query(): Couldn't fetch mysqli in /var/www/html/oncall_schedule/create_db.php on line 72
+[29-Aug-2016 15:23:48 America/Los_Angeles] PHP Warning:  mysqli::query(): Couldn't fetch mysqli in /var/www/html/oncall_schedule/create_db.php on line 77

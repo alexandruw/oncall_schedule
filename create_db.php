@@ -20,16 +20,16 @@ function add_seven_days($date) {
 
 
 //Array to store team members.
-$members_inorder = array("Raghu Aderapalli", "Daniel Ward", "Eddie Rodriguez", "Placido Sanchez", "Alex Kim", "Rajesh Kunwar" );
+$members_inorder = array("Daniel Ward", "Eddie Rodriguez", "Placido Sanchez", "Alex Kim", "Rajesh Kunwar", "Raghu Aderapalli" );
 
-$membersEmail = array("raghavendra.x.aderapalli.-nd@disney.com", "daniel.ward@disney.com", "eddie.rodriguez@disney.com", "placido.sanchez@disney.com", "alex.kim@disney.com", "rajesh.b.kunwar.-nd@disney.com");
+$membersEmail = array("daniel.ward@disney.com", "eddie.rodriguez@disney.com", "placido.sanchez@disney.com", "alex.kim@disney.com", "rajesh.b.kunwar.-nd@disney.com", "raghavendra.x.aderapalli.-nd@disney.com");
 
-$memberscellPhone = array("123", "123", "123", "123", "123", "123");
+$memberscellPhone = array("213-434-5272", "323-365-3822", "818-395-2472", "818-572-3401", "832-525-8676", "254-424-7589");
 
-$membersworkPhone = array("123", "123", "123", "123", "123", "123");
+$membersworkPhone = array("818-955-4775", "818-973-4116", "818-955-4751", "818-569-7821", "818-973-2107", "818-973-3498");
 
 //Creating the start date for the first member.
-$start_date = "2016-08-19";
+$start_date = "2016-08-26";
 
 //Connecting to the database. The class is already written to connect to the database and located in ./classes/ directory.
 include('classes/db_connection.php');
