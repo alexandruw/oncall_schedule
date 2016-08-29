@@ -12,7 +12,7 @@ $numberofMembers = mysqli_num_rows($result);
 
 ?>
 
-<!DOCTTYPE html>
+<!DOCTYPE html>
 <html>
 
 	<head>
@@ -24,7 +24,7 @@ $numberofMembers = mysqli_num_rows($result);
 
 	</head>
 	
-	<body>
+	<body style="background:linear-gradient(rgba(204, 204, 204, 0.75), rgba(0, 0, 0, 0.32))">
 		<?php
 			include 'includes/nav.php';
 		?>
@@ -42,7 +42,7 @@ $numberofMembers = mysqli_num_rows($result);
 
 		?>
 		<h2 style="margin-left:35px; color:rgb(1, 171, 108)">Currently On Call</h2><h5 style="margin-left:35px; color:rgb(255, 0, 0)">(On Call Changes Every Friday at 6:30 PM PST)</h5>
-		<div style="width: 90%; padding: 5px; border: 5px solid rgba(208, 24, 24, 0.53); margin: 5px; margin-left:35px" class="container-fluid1">
+		<div style="width: 90%; padding: 5px; border: 5px solid rgba(255, 255, 255, 0.74); margin: 5px; margin-left:35px" class="container-fluid1">
     		<div class="row">
         		<div class="column_oncall"><h4><?php echo $memberName; ?></h4></div>
             	<span><img style="float: right; margin-right: 16px" src="/images/oncall2.png"</span>
@@ -75,7 +75,7 @@ $numberofMembers = mysqli_num_rows($result);
             	$phone = get_members_phone($query2);
 		?>
 
-			<div style="width: 90%; padding: 10px; border: 3px solid gray; margin: 5px; margin-left:35px" class="container-fluid1">
+			<div style="width: 90%; padding: 10px; border: 3px solid rgba(255,255,255,0.74); margin: 5px; margin-left:35px" class="container-fluid1">
     			<div class="row"> -
         			<div class="column_oncall"><h4><?php echo $memberName; ?></h4></div>
             			<span>FROM: <?php echo $start_date; ?></span>
@@ -91,4 +91,4 @@ $numberofMembers = mysqli_num_rows($result);
 
 	</body>
 
-</html>
+</htmlnear-gradient(rgba(204, 204, 204, 0.75), rgba(0, 0, 0, 0.32));)))>

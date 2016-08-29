@@ -6,7 +6,7 @@ class dbConnection {
 	//Constructor function
    public function __construct() {    
 		
-		$this->connection = new mysqli('localhost', 'root', '', 'on_call');
+		$this->connection = new mysqli('localhost', 'root', 'P@$$w0rd!!', 'on_call');
 			
 		
 		//Error Handling
