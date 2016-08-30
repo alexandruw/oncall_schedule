@@ -24,7 +24,7 @@ $numberofMembers = mysqli_num_rows($result); //count the number of members so th
 
 	</head>
 	
-	<body style="background:linear-gradient(rgba(204, 204, 204, 0.75), rgba(0, 0, 0, 0.32))">
+	<body style="background:linear-gradient(rgba(179, 177, 177, 0.85), rgba(0, 0, 0, 0.40))">
 		<?php
 			include 'includes/nav.php';
 		?>
@@ -47,7 +47,7 @@ $numberofMembers = mysqli_num_rows($result); //count the number of members so th
 		
 		<!-- HTML section for on call member -->
 		<h2 style="margin-left:35px; color:rgb(1, 171, 108)">Currently On Call</h2><h5 style="margin-left:35px; color:rgb(255, 0, 0)">(On Call Changes Every Friday at 6:30 PM PST)</h5>
-		<div style="width: 90%; padding: 5px; border: 5px solid rgba(255, 255, 255, 1); margin: 5px; margin-left:35px" class="container-fluid1">
+		<div style="width: 90%; padding: 5px; border: 6px solid rgba(255, 255, 255, 1); margin: 5px; margin-left:35px" class="container-fluid1">
     		<div class="row">
         		<div class="column_oncall"><h4><?php echo $memberName; ?></h4></div>
             	<span><img style="float: right; margin-right: 16px" src="/images/oncall2.png"</span>
