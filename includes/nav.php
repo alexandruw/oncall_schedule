@@ -8,7 +8,7 @@
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</button>
-				<a style="color:white" class="navbar-brand" href="#">DATG MEDIA IT</a>  
+				<a style="color:white; margin-left:-20px" class="navbar-brand" href="#">DATG MEDIA IT INFRASTRUCTURE</a>  
 				</div>
 				<div>
 				<img src="images/logo.png" style="margin-right:45px; float:right"></img>

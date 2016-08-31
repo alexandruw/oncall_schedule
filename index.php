@@ -13,7 +13,7 @@ $numberofMembers = mysqli_num_rows($result); //count the number of members so th
 ?>
 
 <!DOCTYPE html>
-<html>
+<html style="min-height:100%">
 
 	<head>
 
@@ -24,7 +24,7 @@ $numberofMembers = mysqli_num_rows($result); //count the number of members so th
 
 	</head>
 	
-	<body style="background:linear-gradient(rgba(179, 177, 177, 0.85), rgba(0, 0, 0, 0.40))">
+	<body style="margin-left:45px; background:linear-gradient(rgba(43, 48, 52, 0.901961), rgba(16, 40, 60, 0.9))">
 		<?php
 			include 'includes/nav.php';
 		?>
@@ -46,16 +46,16 @@ $numberofMembers = mysqli_num_rows($result); //count the number of members so th
 		?>
 		
 		<!-- HTML section for on call member -->
-		<h2 style="margin-left:35px; color:rgb(1, 171, 108)">Currently On Call</h2><h5 style="margin-left:35px; color:rgb(255, 0, 0)">(On Call Changes Every Friday at 6:30 PM PST)</h5>
+		<h2 style="margin-left:35px; color:rgb(1, 171, 108)">Currently On Call</h2><h5 style="margin-left:35px; color:rgba(234, 81, 92, 0.95)">(On Call Changes Every Friday at 6:30 PM PST)</h5>
 		<div style="width: 90%; padding: 5px; border: 6px solid rgba(255, 255, 255, 1); margin: 5px; margin-left:35px" class="container-fluid1">
     		<div class="row">
-        		<div class="column_oncall"><h4><?php echo $memberName; ?></h4></div>
-            	<span><img style="float: right; margin-right: 16px" src="/images/oncall2.png"</span>
+        		<div class="column_oncall"><h4 style="color:white; font-size:20px"><?php echo $memberName; ?></h4></div>
+            	<span><img style="float: right; margin-right: 25px; margin-top:10px" src="/images/oncall2.png"</span>
 
             	<div class="column_oncall">On Call Till: <?php echo $end_date; ?>
 
-            		<hr style="border-top: 2px solid rgba(1, 171, 108, 0.3);"></div>
-            	<div class="column_oncall"><h4>Contact Methods</h4></div>
+            		<hr style="width:141%; border-top: 2px solid rgba(1, 171, 108, 0.3);"></div>
+            	<div class="column_oncall"><h4 style="color:white; font-size:20px">Contact Methods</h4></div>
             	<div class="column_oncall">Email: <?php echo $email; ?></div>
             	<div class="column_oncall">O: <?php echo $officePhone; ?> | C: <?php echo $cellPhone; ?></div>
     		</div>
@@ -64,7 +64,7 @@ $numberofMembers = mysqli_num_rows($result); //count the number of members so th
 		<br>
 	
 	<!-- HTML AND PHP SECTION FOR OTHER MEMBERS -->
-		<h3 style="margin-left:35px; color:rgba(0, 140, 165, 0.82)">Coming Weeks On Calls</h3>
+		<h3 style="margin-left:35px; color:rgba(38, 145, 165, 0.95)">Upcoming Weeks Schedule </h3>
 	
 		<?php
 			
@@ -81,17 +81,21 @@ $numberofMembers = mysqli_num_rows($result); //count the number of members so th
             	$officePhone = get_office_phone($query);
 				$cellPhone = get_cell_phone($query);
 		?>
-
-			<div style="width: 90%; padding: 10px; border: 3px solid rgba(255,255,255,0.74); margin: 5px; margin-left:35px" class="container-fluid1">
-    			<div class="row"> -
-        			<div class="column_oncall"><h4><?php echo $memberName; ?></h4></div>
-            			<span>FROM: <?php echo $start_date; ?></span>
-            			<span>To: <?php echo $end_date; ?></span>
-            			<div class="column_oncall"><h4>Contact Methods</h4></div>
-            			<div class="column_oncall">Email: <?php echo $email; ?></div>
-           				<div class="column_oncall">O: <?php echo $officePhone; ?> | C: <?php echo $cellPhone; ?></div>
-  				  </div>
-			</div>
+			
+			<div style="width: 90%; padding: 10px; border: 3px solid rgba(255,255,255,0.74); margin: 5px; margin-left:35px" class="grow"> 
+    			<div id="parent">  
+        			<div class="column_oncall"><h4 style="color:white"><?php echo $memberName; ?></h4></div>
+            			<span style="color:wheat; margin-right:10px; margin-left:-20px">FROM: <?php echo $start_date; ?></span>
+            			<span style="color:wheat">To: <?php echo $end_date; ?></span>
+						<div class="column_oncall">
+            				<div id="hover-content"><h4 style="color:white">Contact Methods</h4>
+            					<div id="hover-content">Email: <?php echo $email; ?>
+           							<div id="hover-content">O: <?php echo $officePhone; ?> | C: <?php echo $cellPhone; ?></div>
+								</div>
+							</div>
+						</div>
+				</div>
+  			</div>		
 			
 		<?php $i++; $j++; } ?>
 

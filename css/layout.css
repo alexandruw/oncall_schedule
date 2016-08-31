@@ -15,8 +15,9 @@
 	float: left;
 	position: relative;
     min-height: 11px;
-    padding-left: 15%;
+    padding-left: 11%;
     padding-right: 15px;
+	color: wheat;
 }
 
 .column_oncall2 {
@@ -35,5 +36,29 @@
     line-height: 20px;
     height: 50px;
     margin-right: -100%;
+}
+
+.grow {
+    height: 65px; /* Origional height */
+    width: 22%; /* Origional width */
+    margin: 5px 1% 5px 1%; /* Just for presentation (Not required) */
+    float: left; /* Just for presentation (Not required) */
+    position: relative; /* Just for presentation (Not required) */
+    transition:height 0.5s; /* Animation time */
+    -webkit-transition:height 0.5s; /* For Safari */
+	padding-left: 15%;
+	padding-right: 15px;
+}
+.grow:hover {
+    height: 150px; /* This is the height on hover */
+}
+
+#hover-content {
+    display:none;
+	height: 110px;
+}
+#parent:hover #hover-content {
+    display:block;
+	height: 110px;
 }
 
