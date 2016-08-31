@@ -14,5 +14,10 @@
 
 Below is the screenshot of what the page looks like.
 
-![Alt text](/images/app_screenshot.png?raw=true "App Screenshot")
+		Status-IO Page
+![Alt text](/images/status-io.png?raw=true "Status-IO Screenshot")
+
+		On-Call-Schedule Page
+![Alt text](/images/app_screenshot.png?raw=true "Status-IO Screenshot")
+
 
