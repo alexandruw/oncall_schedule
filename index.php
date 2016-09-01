@@ -56,7 +56,7 @@ $numberofMembers = mysqli_num_rows($result); //count the number of members so th
 
             		<hr style="width:141%; border-top: 2px solid rgba(1, 171, 108, 0.3);"></div>
             	<div class="column_oncall"><h4 style="color:white; font-size:20px">Contact Methods</h4></div>
-            	<div class="column_oncall">Email: <?php echo $email; ?></div>
+            	<div class="column_oncall">Email: <a href="mailto:<?php echo $email; ?>"><?php echo $email; ?></a></div>
             	<div class="column_oncall">O: <?php echo $officePhone; ?> | C: <?php echo $cellPhone; ?></div>
     		</div>
 		</div>
