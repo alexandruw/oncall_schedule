@@ -89,7 +89,7 @@ $numberofMembers = mysqli_num_rows($result); //count the number of members so th
             			<span style="color:wheat">To: <?php echo $end_date; ?></span>
 						<div class="column_oncall">
             				<div id="hover-content"><h4 style="color:white">Contact Methods</h4>
-            					<div id="hover-content">Email: <?php echo $email; ?>
+            					<div id="hover-content">Email: <u><a style="color:rgb(14,144,255)" href="mailto:<?php echo $email; ?>"><?php echo $email; ?></a></u>
            							<div id="hover-content">O: <?php echo $officePhone; ?> | C: <?php echo $cellPhone; ?></div>
 								</div>
 							</div>
